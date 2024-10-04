@@ -1,0 +1,91 @@
+/* Background Container */
+.background-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(238, 4, 82, 0.89), rgba(28, 144, 221, 0.8)),url('/public/sign.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Form Side Styling */
+.form-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Adds dark transparency */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(253, 251, 251, 0.062); 
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgb(189, 23, 78);
+}
+
+/* Typography (Title) */
+h4 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h6 {
+  color: #fff;
+  text-align: center;
+  font-size: xx-small;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-size:x-large;
+
+}
+/* Input Fields */
+.MuiTextField-root {
+  background-color: rgba(241, 231, 237, 0.918);
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Input Field Text and Label */
+.MuiInputLabel-root, .MuiInputBase-input {
+  color: #fff;
+}
+
+/* Submit Button */
+button {
+  background-color: #FF5722;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #e67519f1;
+}
+
+/* Error Message */
+.alert-error {
+  margin-top: 10px;
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .background-container {
+    background-attachment: scroll; /* Prevents background scrolling issues on mobile */
+  }
+}
